@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Overview</title>
+    <link rel="stylesheet" href="path/to/your/styles.css"> <!-- Add your CSS file path -->
+</head>
+<body>
+    <header>
+        <!-- Include any static header content here -->
+        <h1>Header Placeholder</h1>
+    </header>
+
+    <div id="content-wrapper">
+        <div class="container-fluid">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Users</a>
+                </li>
+                <li class="breadcrumb-item active">Overview</li>
+            </ol>
+            <a class="btn btn-primary my-3" href="./newuser.html">
+                <i class="fa fa-plus"></i> Create New User
+            </a>
+            <div class="user-list">
+                <h2>Users</h2>
+                <ul>
+                    <!-- Replace the following list items with actual user data -->
+                    <li>John Doe - johndoe@example.com</li>
+                    <li>Jane Smith - janesmith@example.com</li>
+                    <li>Mike Brown - mikebrown@example.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Include any static footer content here -->
+        <p>Copyright @ 2025 AssisTechX. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+You sent
+dashboard
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/landing_page.css" />
+  <link rel="stylesheet" href="./css/contactus.css"/>
+  <title>AssisTechX</title>
+</head>
+<body>
+
+<div id="content-wrapper">
+
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="#">Dashboard</a>
+      </li>
+      <li class="breadcrumb-item active">Overview</li>
+    </ol>
+    <a class="btn btn-primary my-3" href="./ticket.php"><i class="fa fa-plus"></i> New Ticket</a>
+    <div class="card mb-3">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Requester</th>
+                <th>Team</th>
+                <th>Agent</th>
+                <th>Created At</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Static ticket data -->
+              <tr>
+                <td><a href="./ticket-details.html?id=1">Ticket Title 1</a></td>
+                <td>John Doe</td>
+                <td>Support Team</td>
+                <td>--</td>
+                <td>05-01-2025 12:00:00</td>
+                <td width="100px">
+                  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <div class="btn-group" role="group">
+                      <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a href="./ticket-details.html?id=1" class="dropdown-item" href="#">View</a>
+                        <a class="dropdown-item" onclick="return confirm('Are you sure to delete')" href="?del=1">Delete</a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="./ticket-details.html?id=2">Ticket Title 2</a></td>
+                <td>Jane Smith</td>
+                <td>Development Team</td>
+                <td>--</td>
+                <td>06-01-2025 14:30:00</td>
+                <td width="100px">
+                  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <div class="btn-group" role="group">
+                      <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a href="./ticket-details.html?id=2" class="dropdown-item" href="#">View</a>
+                        <a class="dropdown-item" onclick="return confirm('Are you sure to delete')" href="?del=2">Delete</a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.container-fluid -->
+
+  <!-- Sticky Footer -->
+  <footer class="sticky-footer">
+    <div class="container my-auto">
+      <div class="copyright text-center my-auto">
+        <span>Copyright © synchlab coding</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<!-- /.content-wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+  <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+        <a class="btn btn-primary" href="./index.html">Logout</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Page level plugin JavaScript-->
+<script src="vendor/chart.js/Chart.min.js"></script>
+<script src="vendor/datatables/jquery.dataTables.js"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin.min.js"></script>
+
+<!-- Demo scripts for this page-->
+<script src="js/demo/datatables-demo.js"></script>
+<script src="js/demo/chart-area-demo.js"></script>
+
+</body>
+
+</html>
