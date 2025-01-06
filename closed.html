@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/landing_page.css" />
+  <link rel="stylesheet" href="./css/contactus.css"/>
+  <title>AssisTechX</title>
+</head>
+<body>
+  <div id="content-wrapper">
+    <div class="container-fluid">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Overview</li>
+      </ol>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered table-sm" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Subject</th>
+                  <th>Requester</th>
+                  <th>Team</th>
+                  <th>Agent</th>
+                  <th>Status</th>
+                  <th>Created At</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Static Data Example -->
+                <tr>
+                  <td><a href="./ticket-details.html?id=1">Ticket 1 Title</a></td>
+                  <td>John Doe</td>
+                  <td>Team A</td>
+                  <td>Jane Smith</td>
+                  <td><button class="btn btn-danger">Closed</button></td>
+                  <td>01-01-2024 12:00:00</td>
+                  <td width="100px">
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Action
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <a href="./ticket-details.html?id=1" class="dropdown-item">View</a>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="./ticket-details.html?id=2">Ticket 2 Title</a></td>
+                  <td>Sarah Lee</td>
+                  <td>Team B</td>
+                  <td>Mike Jordan</td>
+                  <td><button class="btn btn-danger">Closed</button></td>
+                  <td>02-01-2024 13:30:00</td>
+                  <td width="100px">
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Action
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <a href="./ticket-details.html?id=2" class="dropdown-item">View</a>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Add more static rows as needed -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container-fluid -->
+
+    <!-- Sticky Footer -->
+    <footer class="sticky-footer">
+      <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+          <span>Copyright @ 2025 AssisTechX. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal -->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="./index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Page level plugin JavaScript-->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="vendor/datatables/jquery.dataTables.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin.min.js"></script>
+
+  <!-- Demo scripts for this page-->
+  <script src="js/demo/datatables-demo.js"></script>
+  <script src="js/demo/chart-area-demo.js"></script>
+
+</body>
+
+</html>
